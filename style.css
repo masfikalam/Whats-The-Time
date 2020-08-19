@@ -1,4 +1,13 @@
 body {
     background: url('img/bg-3.jpg');
     background-position: top;
+    color: lime;
+}
+
+main {
+    margin: 100px auto;
+    width: 500px;
+    font-size: 44px;
+    display: flex;
+    justify-content: space-around;
 }
