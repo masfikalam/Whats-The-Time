@@ -1,7 +1,6 @@
 body {
     background: url('img/earth.jpg');
-    background-position: top;
-    background-size: cover;
+    background-position: center;
     color: white;
     font-family: 'Orbitron', sans-serif;
 }
