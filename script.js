@@ -1,37 +1,20 @@
 function displayTime() {
     // elements
-    const hourBox = document.getElementById('hour');
-    const minuteBox = document.getElementById('minute');
-    const secondBox = document.getElementById('second');
-    const ampm = document.getElementById('ampm');
+    const timeBox = document.getElementById('myTime');
+    const dayBox = document.getElementById('myDay');
+    const dateBox = document.getElementById('myDate');
 
     // getting time details
     let time = new Date;
-    let hour = time.getHours();
-    let minute = time.getMinutes();
-    let second = time.getSeconds();
-
-    // setting am / pm
-    if (hour >= 12) {
-        hour -= 12;
-        ampm.innerText = 'pm';
-    }
-
-    // handling double digit || minute < 10 || hour < 10
-    if (hour < 10) {
-        hour = `0${hour}`;
-    }
-    if (minute < 10) {
-        minute = `0${minute}`;
-    }
-    if (second < 10) {
-        second = `0${second}`;
-    }
+    let myTime = time.toLocaleTimeString();
+    let date = time.toDateString().split(' ');
+    let myDay = date[0];
+    let myDate = `${date[2]} / ${date[1]} / ${date[3]}`;
 
     // showing the values
-    hourBox.innerText = `${hour} :`;
-    minuteBox.innerText = `${minute} :`;
-    secondBox.innerText = `${second}`;
+    timeBox.innerText = myTime;
+    dayBox.innerText = myDay;
+    dateBox.innerText = myDate;
 }
 
 // updating every second

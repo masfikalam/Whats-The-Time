@@ -5,25 +5,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>What's The Time</title>
+
+    <!-- style -->
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="img/clock.png" type="image/x-icon">
 </head>
 
 <body>
     <main>
-        <div>
-            <h1 id="hour"></h1>
+        <!-- show time -->
+        <div id="time">
+            <h1 id="myTime">0:00:00 PM</h1>
         </div>
-        <div>
-            <h1 id="minute"></h1>
-        </div>
-        <div>
-            <h1 id="second"></h1>
-        </div>
-        <div>
-            <h5 id="ampm"></h5>
+
+        <!-- show date -->
+        <div id="date">
+            <h1 id="myDay"></h1>
+            <h1 id="myDate"></h1>
         </div>
     </main>
+
+    <!-- script -->
     <script src="script.js"></script>
 </body>
 
